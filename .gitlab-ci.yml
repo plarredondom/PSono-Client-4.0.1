@@ -4,9 +4,17 @@ scheduled-linter:
   stage: test
   image: psono-docker.jfrog.io/ubuntu:22.04
   script:
+    - apt-get update
+    - apt-get install -y git
+    - git clone https://gitlab.com/psono/psono-client.git
+    - cd psono-client
+    - git branch --track develop origin/develop
+    - git fetch --all
+    - git pull --all
     - sh ./var/prep-build.sh
     - npm run buildfirefox
-    - npm install -g addons-linter@1.17.0
+    - npm install -g addons-linter@6.1.0
     - cat ./build/firefox/manifest.json
     - addons-linter --help
     - addons-linter ./build/firefox
+
