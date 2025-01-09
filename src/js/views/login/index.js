@@ -32,10 +32,12 @@ const LoginView = ({fullWidth}) => {
         <>
             <FrameControls />
             <DarkBox className={fullWidth ? '' : classes.box}>
-                <ConfigLogo configKey={'logo'} defaultLogo={'img/logo.png'} height="100%"/>
+                <ConfigLogo configKey={'logo'} defaultLogo={'img/KG_logo_222x60.png'} height="100%"/>
+                {/*
                 <a href="https://psono.com/" target="_blank" rel="noopener" className="infolabel">
                     <i className="fa fa-info-circle" aria-hidden="true"/>
                 </a>
+                */}
                 <LoginViewForm samlTokenId={samlTokenId} oidcTokenId={oidcTokenId} fullWidth={fullWidth}/>
             </DarkBox>
         </>

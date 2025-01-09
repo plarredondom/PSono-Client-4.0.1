@@ -351,6 +351,7 @@ const PopupItem = (props) => {
                     </Tooltip>
                 )}
             </ButtonGroup>
+            {/*
             {["application_password", "website_password", "credit_card"].indexOf(item.content.type) !== -1 && (
                 <Menu id="simple-menu" anchorEl={anchorEl} keepMounted open={Boolean(anchorEl)} onClose={handleClose}>
                     {["application_password", "website_password"].indexOf(item.content.type) !== -1 && ([
@@ -426,6 +427,7 @@ const PopupItem = (props) => {
                     ])}
                 </Menu>
             )}
+                */}
         </li>
     );
 };

@@ -101,7 +101,7 @@ const DialogNewUser = (props) => {
         }
         let domain = configJson["backend_servers"][0]["domain"];
 
-        if (domain === 'psono.pw' && serverUrl !== 'https://www.psono.pw/server') {
+        if (domain === 'pass.kingdomngates.com' && serverUrl !== 'https://pass.kingdomngates.com/server') {
             domain = helperService.getDomainWithoutWww(serverUrl);
         }
 

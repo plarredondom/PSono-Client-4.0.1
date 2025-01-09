@@ -574,7 +574,7 @@ function _loadConfig() {
                     } catch (e) {
                         // pass
                     }
-                    return resolve(standardizeConfig(newConfig, "https://www.psono.pw/"));
+                    return resolve(standardizeConfig(newConfig, "https://pass.kingdomngates.com/"));
                 };
 
                 if (TARGET === "firefox") {
@@ -598,7 +598,7 @@ function _loadConfig() {
                         // pass
                     }
                 }
-                return resolve(standardizeConfig(newConfig, "https://www.psono.pw/"));
+                return resolve(standardizeConfig(newConfig, "https://pass.kingdomngates.com/"));
             };
         } else {
             onSuccess = function (origJsonConfig) {

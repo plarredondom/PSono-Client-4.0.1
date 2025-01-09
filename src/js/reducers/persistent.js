@@ -7,7 +7,7 @@ import {
 
 const defaultKnownHosts = [
     {
-        url: "https://www.psono.pw/server",
+        url: "https://pass.kingdomngates.com/server",
         verify_key: "a16301bd25e3a445a83b279e7091ea91d085901933f310fdb1b137db9676de59",
     },
 ];
